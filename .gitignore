@@ -4,6 +4,8 @@ logs
 .DS_Store
 dist/client.js
 
+/public/
+
 # Runtime data
 pids
 *.pid

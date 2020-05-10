@@ -27,7 +27,7 @@ export tag Home < Page
 				<input[data.states:filter].search>
 				<ul.entries>
 					for pokemon in data.filtered_list
-						<li.entry route-to=pokemon:id>
+						<li.entry route-to=pokemon:name>
 							<span.name> pokemon:name
 			
-			<Pokemon[detail_state] route=':id'>
+			<Pokemon[detail_state] route=':name'>

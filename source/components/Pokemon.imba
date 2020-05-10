@@ -12,8 +12,9 @@ export tag Pokemon
 		array[Math.floor(@random_value * array:length)]
 
 	def render
-		<self.type.{@pokemon_data:types[0]:type:name}>
-			<div.title.type.{@pokemon_data:types[0]:type:name}.dark-color>
+		const main_type = @pokemon_data:types[0]:type:name
+		<self.type.{main_type}>
+			<div.title.type.{main_type}.dark-color>
 				<img src=@pokemon_data:sprites:front_default>
 				<div>
 					<h2> "{@pokemon_data:name} (Nº {@pokemon_data:national_dex_number})"
@@ -23,9 +24,9 @@ export tag Pokemon
 							<li.type.{type_data:type:name}> type_data:type:name
 			<Description[random_value_from(@pokemon_data:flavor_text_entries)]>
 			<div.content>
-				<Abilities[@pokemon_data:abilities].type.{@pokemon_data:types[0]:type:name}.light-color>
-				<Stats[@pokemon_data:stats].type.{@pokemon_data:types[0]:type:name}.light-color>
-				<Misc[@pokemon_data].type.{@pokemon_data:types[0]:type:name}.light-color>
+				<Abilities[@pokemon_data:abilities].type.{main_type}.light-color>
+				<Stats[@pokemon_data:stats].type.{main_type}.light-color>
+				<Misc[@pokemon_data].type.{main_type}.light-color>
 
 tag Description
 	def clean text

@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "",
     "serve": "webpack-dev-server --mode=development --content-base public/",
     "build": "webpack --mode=production",
     "watch": "webpack --watch --progress --colors --display-modules"

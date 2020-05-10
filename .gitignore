@@ -5,6 +5,7 @@ logs
 dist/client.js
 
 /public/
+/build/
 
 # Runtime data
 pids

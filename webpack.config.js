@@ -50,5 +50,5 @@ module.exports = {
 	extensions: [".imba", ".js", ".json", ".css"]
   },
   entry: ["./source/index.imba", "./source/index.css", "./source/index.html"],
-  output: {  path: __dirname + '/public', filename: '[name].[contenthash].js' }
+  output: {  path: __dirname + '/build', filename: '[name].[contenthash].js' }
 }

@@ -30,7 +30,7 @@ export tag Pokemon
 
 tag Description
 	def clean text
-		text = text.replace(/\\[tv0bfnr]/, ' ').replace('\u000c', ' ')
+		text = text.replace(/\s+/g, ' ')
 		let sentences = for sentence in text.split('.')
 			sentence = sentence.trim
 			sentence ? "{sentence[0].toUpperCase()}{sentence.slice(1).toLowerCase()}" : ''
